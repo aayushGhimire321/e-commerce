@@ -21,6 +21,7 @@
 <script>
     import ProductBox from "../../components/ProductBox";
     export default {
+        name: "ProductView",
         components: {ProductBox},
         props:["products"]
     }
