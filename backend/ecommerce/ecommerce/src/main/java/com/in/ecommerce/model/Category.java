@@ -1,20 +1,28 @@
 package com.in.ecommerce.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name=category)
+@Table(name = "category")
 public class Category {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="category_name")
+    @Column(name = "category_name")
     private @NotBlank String categoryName;
+
     private @NotBlank String description;
-    @Column(name="image_url")
-    private @NotBlank String ImageUrl;
+
+    @Column(name = "image_url")
+    private @NotBlank String imageUrl;
 
     public Integer getId() {
         return id;
@@ -41,10 +49,10 @@ public class Category {
     }
 
     public String getImageUrl() {
-        return ImageUrl;
+        return imageUrl;
     }
 
     public void setImageUrl(String imageUrl) {
-        ImageUrl = imageUrl;
+        this.imageUrl = imageUrl;
     }
 }
