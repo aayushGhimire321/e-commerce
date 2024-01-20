@@ -24,6 +24,7 @@
   import axios from "axios";
   import swal from "sweetalert";
   export default {
+    name: "SignInPage", 
     props: ["baseURL"],
     data() {
       return {
