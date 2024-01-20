@@ -82,6 +82,7 @@
   import axios from "axios";
   import swal from "sweetalert";
   export default {
+    name: "SignUpPage",
     props: ["baseURL"],
     data() {
       return {
@@ -131,7 +132,7 @@
     color: #000;
   }
   
-  @media screen and (min-width: 992 px) {
+  @media screen and (min-width: 992px) {
     #signup {
       width: 40%;
     }
