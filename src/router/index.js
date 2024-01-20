@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import AddCategory from '../views/Category/AddCategory'
-import Category from '../views/Category/Category'
-import Product from '../views/Product/Product'
-import Admin from "../views/Admin";
+import CategoryView from '../views/Category/Category'
+import ProductView from '../views/Product/Product'
+import AdminPanel from "../views/Admin";
 import AddProduct from "../views/Product/AddProduct";
 import EditCategory from "../views/Category/EditCategory";
 import EditProduct from "../views/Product/EditProduct";
 import ShowDetails from "../views/Product/ShowDetails";
 import WishList from "../views/Product/WishList";
 import ListProducts from "../views/Category/ListProducts";
-import Signup from "../views/Signup";
-import Signin from '../views/Signin';
-import Cart from '../views/Cart';
+import SignUpPage from "../views/Signup";
+import SignInPage from '../views/Signin';
+import ShoppingCart from '../views/Cart';
 
 const routes = [
   {
@@ -34,7 +34,7 @@ const routes = [
   {
     path: '/admin/category',
     name: 'Category',
-    component: Category
+    component: CategoryView
   },
     // category edit
   {
@@ -46,12 +46,12 @@ const routes = [
   {
     path: '/admin',
     name: 'Admin',
-    component: Admin
+    component: AdminPanel
   },
   {
     path: '/admin/product',
     name: 'AdminProduct',
-    component: Product
+    component: ProductView
   },
     // add product
   {
@@ -78,12 +78,12 @@ const routes = [
   {
     path: '/signup',
     name: 'Signup',
-    component: Signup
+    component: SignUpPage
   },
   {
     path: '/signin',
     name: 'Signin',
-    component: Signin
+    component: SignInPage
   },
   {
     path: '/wishlist',
@@ -93,7 +93,7 @@ const routes = [
   {
     path: '/cart',
     name: 'Cart',
-    component: Cart
+    component: ShoppingCart
   }
 ]
 
