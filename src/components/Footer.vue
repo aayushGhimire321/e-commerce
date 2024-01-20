@@ -69,5 +69,22 @@
 </template>
 <script>
     export default {
-
+        name: "AppFooter",
     }
+</script>
+<style>
+    footer {
+        margin-top: 100px;
+        background-color: #232F3E;
+        font-size: 16px;
+    }
+     a{
+         text-decoration: none;
+     }
+    .footer-link {
+        color: #DDD;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+</style>
