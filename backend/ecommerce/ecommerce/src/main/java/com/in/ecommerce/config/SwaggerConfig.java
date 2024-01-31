@@ -20,13 +20,14 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(getApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.educative.ecommerce"))
+                .apis(RequestHandlerSelectors.basePackage("com.in.ecommerce"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo getApiInfo() {
-        Contact contact = new Contact("webtutsplus", "http://webtutsplus.com", "contact.webtutsplus@gmail.com");
+        Contact contact = new Contact("Facebook", "https://www.facebook.com/aayush.ghimire.18/", "aghimire781@gmail.com");
+
         return new ApiInfoBuilder()
                 .title("Ecommerce API")
                 .description("Documentation Ecommerce api")
