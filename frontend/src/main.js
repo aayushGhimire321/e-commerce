@@ -1,5 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+import { BrowserRouter } from 'react-router-dom'; // Assuming you are using React Router for routing
 
-createApp(App).use(router).mount('#app')
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('app')
+);
